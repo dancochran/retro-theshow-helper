@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.dan.baseball</groupId>
+  <artifactId>retro-theshow-helper</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>retro-theshow-helper</name>
+  <description>Utility for dragging splits and fielding data from retrosheet.org site and calculating theshow player ratings</description>
+  
+  
+  <build>
+  <plugins>
+    <plugin>
+      <!-- Build an executable JAR -->
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.4.2</version>
+      <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <!-- <classpathPrefix>lib/</classpathPrefix> -->
+            <mainClass>org.dan.baseball.RetroTheshowHelper</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
+</project>
